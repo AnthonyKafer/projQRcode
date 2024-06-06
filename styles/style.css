@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.mainContainer{
+    background-color: antiquewhite;
+    height: 300px;
+    padding: 0 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.mainContainer.active{
+    height: 550px;
+}
+
+
+p, h1{
+    margin: 20px;
+}
+
+h1{
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+p{
+    font-weight: 300;
+}
+
+input, button{
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin: 10px auto;
+    font-weight: 600;
+}
+
+button{
+    cursor: pointer;
+    background-color: rgb(87, 62, 175);
+    color:rgb(218, 199, 177);
+    opacity: 0.8;
+    transition: 0.2s;
+    margin-bottom: 50px;
+}
+
+button:hover{
+    opacity: 1;
+    color: antiquewhite;
+    box-shadow: 1px 1px 10px  rgb(185, 148, 173);
+}
+
+#qrCode{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(87, 70, 49);
+    border-radius: 10px;
+    background-size: 100px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#qrCode{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(87, 70, 49);
+    border-radius: 10px;
+    background-size: 100px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.mainContainer.active #qrCode{
+    opacity: 1;
+}
